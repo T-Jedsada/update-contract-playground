@@ -1,0 +1,537 @@
+{
+  "contractName": "User",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "_storage",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "username",
+          "type": "string"
+        }
+      ],
+      "name": "register",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061022b806100206000396000f30060806040526004361061004b5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c3fb90d68114610050578063f2c298be1461008e575b600080fd5b34801561005c57600080fd5b506100656100e9565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b34801561009a57600080fd5b506040805160206004803580820135601f81018490048402850184019095528484526100e79436949293602493928401919081908401838280828437509497506101059650505050505050565b005b60005473ffffffffffffffffffffffffffffffffffffffff1681565b60008054604080517f3b891d8500000000000000000000000000000000000000000000000000000000815233602482018190526004820192835285516044830152855173ffffffffffffffffffffffffffffffffffffffff90941694633b891d859487949293839260649091019160208701918190849084905b8381101561019757818101518382015260200161017f565b50505050905090810190601f1680156101c45780820380516001836020036101000a031916815260200191505b509350505050600060405180830381600087803b1580156101e457600080fd5b505af11580156101f8573d6000803e3d6000fd5b50505050505600a165627a7a72305820e6753b6dcb611706c51b52c03ae179a0990835878b2e3889fac2de04a648a5cd0029",
+  "deployedBytecode": "0x60806040526004361061004b5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c3fb90d68114610050578063f2c298be1461008e575b600080fd5b34801561005c57600080fd5b506100656100e9565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b34801561009a57600080fd5b506040805160206004803580820135601f81018490048402850184019095528484526100e79436949293602493928401919081908401838280828437509497506101059650505050505050565b005b60005473ffffffffffffffffffffffffffffffffffffffff1681565b60008054604080517f3b891d8500000000000000000000000000000000000000000000000000000000815233602482018190526004820192835285516044830152855173ffffffffffffffffffffffffffffffffffffffff90941694633b891d859487949293839260649091019160208701918190849084905b8381101561019757818101518382015260200161017f565b50505050905090810190601f1680156101c45780820380516001836020036101000a031916815260200191505b509350505050600060405180830381600087803b1580156101e457600080fd5b505af11580156101f8573d6000803e3d6000fd5b50505050505600a165627a7a72305820e6753b6dcb611706c51b52c03ae179a0990835878b2e3889fac2de04a648a5cd0029",
+  "sourceMap": "57:136:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:136:5;;;;;;;",
+  "deployedSourceMap": "57:136:5:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;80:23:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;80:23:4;;;;;;;;;;;;;;;;;;;;;;;94:97:5;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;94:97:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;94:97:5;;-1:-1:-1;94:97:5;;-1:-1:-1;;;;;;;94:97:5;;;80:23:4;;;;;;:::o;94:97:5:-;146:8;;;:38;;;;;;173:10;146:38;;;;;;;;;;;;;;;;;;;;:8;;;;;:16;;163:8;;173:10;;146:38;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;146:38:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;146:38:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;146:38:5;;;;94:97;:::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"./StorageState.sol\";\n\n\ncontract User is StorageState {\n\n    function register(string username) public {\n        _storage.setUser(username, msg.sender);\n    }\n}",
+  "sourcePath": "/Users/jedsada/Documents/development/test-update/contracts/User.sol",
+  "ast": {
+    "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/User.sol",
+    "exportedSymbols": {
+      "User": [
+        277
+      ]
+    },
+    "id": 278,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 259,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/StorageState.sol",
+        "file": "./StorageState.sol",
+        "id": 260,
+        "nodeType": "ImportDirective",
+        "scope": 278,
+        "sourceUnit": 258,
+        "src": "26:28:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 261,
+              "name": "StorageState",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 257,
+              "src": "74:12:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_StorageState_$257",
+                "typeString": "contract StorageState"
+              }
+            },
+            "id": 262,
+            "nodeType": "InheritanceSpecifier",
+            "src": "74:12:5"
+          }
+        ],
+        "contractDependencies": [
+          257
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 277,
+        "linearizedBaseContracts": [
+          277,
+          257
+        ],
+        "name": "User",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 275,
+              "nodeType": "Block",
+              "src": "136:55:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 270,
+                        "name": "username",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 264,
+                        "src": "163:8:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 271,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 382,
+                          "src": "173:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 272,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "173:10:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 267,
+                        "name": "_storage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 256,
+                        "src": "146:8:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Storage_$251",
+                          "typeString": "contract Storage"
+                        }
+                      },
+                      "id": 269,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setUser",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 221,
+                      "src": "146:16:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$_t_address_$returns$__$",
+                        "typeString": "function (string memory,address) external"
+                      }
+                    },
+                    "id": 273,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "146:38:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 274,
+                  "nodeType": "ExpressionStatement",
+                  "src": "146:38:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 276,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "register",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 265,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 264,
+                  "name": "username",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 276,
+                  "src": "112:15:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 263,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "112:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "111:17:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 266,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "136:0:5"
+            },
+            "scope": 277,
+            "src": "94:97:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 278,
+        "src": "57:136:5"
+      }
+    ],
+    "src": "0:193:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/User.sol",
+    "exportedSymbols": {
+      "User": [
+        277
+      ]
+    },
+    "id": 278,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 259,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:5"
+      },
+      {
+        "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/StorageState.sol",
+        "file": "./StorageState.sol",
+        "id": 260,
+        "nodeType": "ImportDirective",
+        "scope": 278,
+        "sourceUnit": 258,
+        "src": "26:28:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 261,
+              "name": "StorageState",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 257,
+              "src": "74:12:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_StorageState_$257",
+                "typeString": "contract StorageState"
+              }
+            },
+            "id": 262,
+            "nodeType": "InheritanceSpecifier",
+            "src": "74:12:5"
+          }
+        ],
+        "contractDependencies": [
+          257
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 277,
+        "linearizedBaseContracts": [
+          277,
+          257
+        ],
+        "name": "User",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 275,
+              "nodeType": "Block",
+              "src": "136:55:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 270,
+                        "name": "username",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 264,
+                        "src": "163:8:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 271,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 382,
+                          "src": "173:3:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 272,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "173:10:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 267,
+                        "name": "_storage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 256,
+                        "src": "146:8:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Storage_$251",
+                          "typeString": "contract Storage"
+                        }
+                      },
+                      "id": 269,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setUser",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 221,
+                      "src": "146:16:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$_t_address_$returns$__$",
+                        "typeString": "function (string memory,address) external"
+                      }
+                    },
+                    "id": 273,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "146:38:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 274,
+                  "nodeType": "ExpressionStatement",
+                  "src": "146:38:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 276,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "register",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 265,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 264,
+                  "name": "username",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 276,
+                  "src": "112:15:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 263,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "112:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "111:17:5"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 266,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "136:0:5"
+            },
+            "scope": 277,
+            "src": "94:97:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 278,
+        "src": "57:136:5"
+      }
+    ],
+    "src": "0:193:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0x594c1f6213c4affdc00c268963df9b41486903eb",
+      "transactionHash": "0x6bd06234674c0065b276d667a4257d8ba71be78787dea3c9b81be63c7251b2c1"
+    },
+    "1234567": {
+      "events": {},
+      "links": {},
+      "address": "0x85fa2c407b006fb399909ae51002e2806934c034",
+      "transactionHash": "0xddb8f35ce3d57a1cdadf732d7ef6d70496165ff193f70793a0ce4414b5b945ef"
+    }
+  },
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-09-30T08:11:10.270Z"
+}

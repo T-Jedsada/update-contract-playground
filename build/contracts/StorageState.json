@@ -1,0 +1,192 @@
+{
+  "contractName": "StorageState",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "_storage",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060c68061001f6000396000f300608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c3fb90d681146043575b600080fd5b348015604e57600080fd5b506055607e565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820dfdcc4f0bccb5358841f39ead1d8105e6f031232251556ef94bf4e8f878f18ff0029",
+  "deployedBytecode": "0x608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c3fb90d681146043575b600080fd5b348015604e57600080fd5b506055607e565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820dfdcc4f0bccb5358841f39ead1d8105e6f031232251556ef94bf4e8f878f18ff0029",
+  "sourceMap": "52:54:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;52:54:4;;;;;;;",
+  "deployedSourceMap": "52:54:4:-;;;;;;;;;;;;;;;;;;;;;;;80:23;;8:9:-1;5:2;;;30:1;27;20:12;5:2;80:23:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"./Storage.sol\";\n\n\ncontract StorageState {\n    Storage public _storage;\n}",
+  "sourcePath": "/Users/jedsada/Documents/development/test-update/contracts/StorageState.sol",
+  "ast": {
+    "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/StorageState.sol",
+    "exportedSymbols": {
+      "StorageState": [
+        257
+      ]
+    },
+    "id": 258,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 253,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/Storage.sol",
+        "file": "./Storage.sol",
+        "id": 254,
+        "nodeType": "ImportDirective",
+        "scope": 258,
+        "sourceUnit": 252,
+        "src": "26:23:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 257,
+        "linearizedBaseContracts": [
+          257
+        ],
+        "name": "StorageState",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 256,
+            "name": "_storage",
+            "nodeType": "VariableDeclaration",
+            "scope": 257,
+            "src": "80:23:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Storage_$251",
+              "typeString": "contract Storage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 255,
+              "name": "Storage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 251,
+              "src": "80:7:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Storage_$251",
+                "typeString": "contract Storage"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 258,
+        "src": "52:54:4"
+      }
+    ],
+    "src": "0:106:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/StorageState.sol",
+    "exportedSymbols": {
+      "StorageState": [
+        257
+      ]
+    },
+    "id": 258,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 253,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:4"
+      },
+      {
+        "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/Storage.sol",
+        "file": "./Storage.sol",
+        "id": 254,
+        "nodeType": "ImportDirective",
+        "scope": 258,
+        "sourceUnit": 252,
+        "src": "26:23:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 257,
+        "linearizedBaseContracts": [
+          257
+        ],
+        "name": "StorageState",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 256,
+            "name": "_storage",
+            "nodeType": "VariableDeclaration",
+            "scope": 257,
+            "src": "80:23:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Storage_$251",
+              "typeString": "contract Storage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 255,
+              "name": "Storage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 251,
+              "src": "80:7:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Storage_$251",
+                "typeString": "contract Storage"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 258,
+        "src": "52:54:4"
+      }
+    ],
+    "src": "0:106:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-09-30T08:01:49.849Z"
+}

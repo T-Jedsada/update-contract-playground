@@ -1,0 +1,20 @@
+{
+  "name": "test-update",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start-ganache": "ganache-cli --networkId 1234567 --blockTime=0.1 -p 8545 -m \"tumble gas embody bright agree pony smoke laptop index sight shallow hungry\"",
+    "lint-sol": "solhint \"contracts/**/*.sol\"",
+    "test-contract": "solidity-coverage",
+    "deploy-contract": "truffle migrate"
+  },
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "truffle-hdwallet-provider": "^0.0.6"
+  },
+  "devDependencies": {
+    "solidity-coverage": "^0.5.11",
+    "truffle-assertions": "^0.5.0"
+  }
+}
