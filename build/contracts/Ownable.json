@@ -39,14 +39,14 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5060008054600160a060020a03191633179055610174806100326000396000f3006080604052600436106100405763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663f2fde38b8114610045575b600080fd5b34801561005157600080fd5b5061007373ffffffffffffffffffffffffffffffffffffffff60043516610075565b005b60005473ffffffffffffffffffffffffffffffffffffffff16331461009957600080fd5b73ffffffffffffffffffffffffffffffffffffffff811615156100bb57600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff929092169190911790555600a165627a7a72305820087429ddd5f1c1c61e41d7873e181b36d18d76ed397642c22e668efef43e35b40029",
-  "deployedBytecode": "0x6080604052600436106100405763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663f2fde38b8114610045575b600080fd5b34801561005157600080fd5b5061007373ffffffffffffffffffffffffffffffffffffffff60043516610075565b005b60005473ffffffffffffffffffffffffffffffffffffffff16331461009957600080fd5b73ffffffffffffffffffffffffffffffffffffffff811615156100bb57600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff929092169190911790555600a165627a7a72305820087429ddd5f1c1c61e41d7873e181b36d18d76ed397642c22e668efef43e35b40029",
+  "bytecode": "0x608060405234801561001057600080fd5b5060008054600160a060020a03191633179055610174806100326000396000f3006080604052600436106100405763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663f2fde38b8114610045575b600080fd5b34801561005157600080fd5b5061007373ffffffffffffffffffffffffffffffffffffffff60043516610075565b005b60005473ffffffffffffffffffffffffffffffffffffffff16331461009957600080fd5b73ffffffffffffffffffffffffffffffffffffffff811615156100bb57600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff929092169190911790555600a165627a7a72305820ab68efa45ed84a8865c615afa471c2e54af667b1406720dd30cbbe3abd743e540029",
+  "deployedBytecode": "0x6080604052600436106100405763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663f2fde38b8114610045575b600080fd5b34801561005157600080fd5b5061007373ffffffffffffffffffffffffffffffffffffffff60043516610075565b005b60005473ffffffffffffffffffffffffffffffffffffffff16331461009957600080fd5b73ffffffffffffffffffffffffffffffffffffffff811615156100bb57600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080547fffffffffffffffffffffffff00000000000000000000000000000000000000001673ffffffffffffffffffffffffffffffffffffffff929092169190911790555600a165627a7a72305820ab68efa45ed84a8865c615afa471c2e54af667b1406720dd30cbbe3abd743e540029",
   "sourceMap": "27:855:1:-;;;281:56;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;312:5:1;:18;;-1:-1:-1;;;;;;312:18:1;320:10;312:18;;;27:855;;;;;;",
   "deployedSourceMap": "27:855:1:-;;;;;;;;;;;;;;;;;;;;;;;668:212;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;668:212:1;;;;;;;;;;476:5;;;;462:10;:19;454:28;;;;;;748:22;;;;;740:31;;;;;;807:5;;;786:37;;;;;;;807:5;;;786:37;;;857:5;:16;;;;;;;;;;;;;;;668:212::o",
   "source": "pragma solidity ^0.4.24;\n\n\ncontract Ownable {\n    address owner;\n\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\n\n    /**\n    * @dev The Ownable constructor sets the original `owner` of the contract to the sender\n    * account.\n    */\n    constructor() public {\n        owner = msg.sender;\n    }\n    /**\n    * @dev Throws if called by any account other than the owner.\n    */\n\n    modifier onlyOwner() {\n        require(msg.sender == owner);\n        _;\n    }\n\n    /**\n    * @dev Allows the current owner to transfer control of the contract to a newOwner.\n    * @param newOwner The address to transfer ownership to.\n    */\n    function transferOwnership(address newOwner) public onlyOwner {\n        require(newOwner != address(0));\n        emit OwnershipTransferred(owner, newOwner); // solhint-disable-line\n        owner = newOwner;\n    }\n}",
-  "sourcePath": "/Users/jedsada/Documents/development/test-update/contracts/Ownable.sol",
+  "sourcePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/Ownable.sol",
   "ast": {
-    "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/Ownable.sol",
+    "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/Ownable.sol",
     "exportedSymbols": {
       "Ownable": [
         112
@@ -211,7 +211,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 382,
+                        "referencedDeclaration": 387,
                         "src": "320:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -300,7 +300,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 382,
+                            "referencedDeclaration": 387,
                             "src": "462:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -354,10 +354,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        385,
-                        386
+                        390,
+                        391
                       ],
-                      "referencedDeclaration": 385,
+                      "referencedDeclaration": 390,
                       "src": "454:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -512,10 +512,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        385,
-                        386
+                        390,
+                        391
                       ],
-                      "referencedDeclaration": 385,
+                      "referencedDeclaration": 390,
                       "src": "740:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -741,7 +741,7 @@
     "src": "0:882:1"
   },
   "legacyAST": {
-    "absolutePath": "/Users/jedsada/Documents/development/test-update/contracts/Ownable.sol",
+    "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/Ownable.sol",
     "exportedSymbols": {
       "Ownable": [
         112
@@ -906,7 +906,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 382,
+                        "referencedDeclaration": 387,
                         "src": "320:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -995,7 +995,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 382,
+                            "referencedDeclaration": 387,
                             "src": "462:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1049,10 +1049,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        385,
-                        386
+                        390,
+                        391
                       ],
-                      "referencedDeclaration": 385,
+                      "referencedDeclaration": 390,
                       "src": "454:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1207,10 +1207,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        385,
-                        386
+                        390,
+                        391
                       ],
-                      "referencedDeclaration": 385,
+                      "referencedDeclaration": 390,
                       "src": "740:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1441,5 +1441,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-09-30T08:01:49.847Z"
+  "updatedAt": "2018-09-30T15:17:20.090Z"
 }
