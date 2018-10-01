@@ -90,14 +90,14 @@
     "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/Storage.sol",
     "exportedSymbols": {
       "Storage": [
-        251
+        166
       ]
     },
-    "id": 252,
+    "id": 167,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 196,
+        "id": 111,
         "literals": [
           "solidity",
           "^",
@@ -113,23 +113,23 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 251,
+        "id": 166,
         "linearizedBaseContracts": [
-          251
+          166
         ],
         "name": "Storage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Storage.User",
-            "id": 201,
+            "id": 116,
             "members": [
               {
                 "constant": false,
-                "id": 198,
+                "id": 113,
                 "name": "username",
                 "nodeType": "VariableDeclaration",
-                "scope": 201,
+                "scope": 116,
                 "src": "73:15:3",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -138,7 +138,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 197,
+                  "id": 112,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "73:6:3",
@@ -152,10 +152,10 @@
               },
               {
                 "constant": false,
-                "id": 200,
+                "id": 115,
                 "name": "myAddress",
                 "nodeType": "VariableDeclaration",
-                "scope": 201,
+                "scope": 116,
                 "src": "98:17:3",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -164,7 +164,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 199,
+                  "id": 114,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "98:7:3",
@@ -179,42 +179,42 @@
             ],
             "name": "User",
             "nodeType": "StructDefinition",
-            "scope": 251,
+            "scope": 166,
             "src": "51:71:3",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 204,
+            "id": 119,
             "name": "users",
             "nodeType": "VariableDeclaration",
-            "scope": 251,
+            "scope": 166,
             "src": "128:19:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
               "typeString": "struct Storage.User[]"
             },
             "typeName": {
               "baseType": {
                 "contractScope": null,
-                "id": 202,
+                "id": 117,
                 "name": "User",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 201,
+                "referencedDeclaration": 116,
                 "src": "128:4:3",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_User_$201_storage_ptr",
+                  "typeIdentifier": "t_struct$_User_$116_storage_ptr",
                   "typeString": "struct Storage.User"
                 }
               },
-              "id": 203,
+              "id": 118,
               "length": null,
               "nodeType": "ArrayTypeName",
               "src": "128:6:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage_ptr",
                 "typeString": "struct Storage.User[]"
               }
             },
@@ -223,7 +223,7 @@
           },
           {
             "body": {
-              "id": 220,
+              "id": 135,
               "nodeType": "Block",
               "src": "214:54:3",
               "statements": [
@@ -236,11 +236,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 215,
+                            "id": 130,
                             "name": "username",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 206,
+                            "referencedDeclaration": 121,
                             "src": "240:8:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -249,11 +249,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 216,
+                            "id": 131,
                             "name": "myAddress",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 208,
+                            "referencedDeclaration": 123,
                             "src": "250:9:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -272,18 +272,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 214,
+                          "id": 129,
                           "name": "User",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 201,
+                          "referencedDeclaration": 116,
                           "src": "235:4:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_User_$201_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_User_$116_storage_ptr_$",
                             "typeString": "type(struct Storage.User storage pointer)"
                           }
                         },
-                        "id": 217,
+                        "id": 132,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -293,7 +293,7 @@
                         "nodeType": "FunctionCall",
                         "src": "235:25:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_User_$201_memory",
+                          "typeIdentifier": "t_struct$_User_$116_memory",
                           "typeString": "struct Storage.User memory"
                         }
                       }
@@ -301,24 +301,24 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_User_$201_memory",
+                          "typeIdentifier": "t_struct$_User_$116_memory",
                           "typeString": "struct Storage.User memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 211,
+                        "id": 126,
                         "name": "users",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 204,
+                        "referencedDeclaration": 119,
                         "src": "224:5:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
                           "typeString": "struct Storage.User storage ref[] storage ref"
                         }
                       },
-                      "id": 213,
+                      "id": 128,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -328,11 +328,11 @@
                       "referencedDeclaration": null,
                       "src": "224:10:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_User_$201_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_User_$116_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct Storage.User storage ref) returns (uint256)"
                       }
                     },
-                    "id": 218,
+                    "id": 133,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -346,14 +346,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 219,
+                  "id": 134,
                   "nodeType": "ExpressionStatement",
                   "src": "224:37:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 221,
+            "id": 136,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -361,15 +361,15 @@
             "name": "setUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 209,
+              "id": 124,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 206,
+                  "id": 121,
                   "name": "username",
                   "nodeType": "VariableDeclaration",
-                  "scope": 221,
+                  "scope": 136,
                   "src": "171:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -378,7 +378,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 205,
+                    "id": 120,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "171:6:3",
@@ -392,10 +392,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 208,
+                  "id": 123,
                   "name": "myAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 221,
+                  "scope": 136,
                   "src": "188:17:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -404,7 +404,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 207,
+                    "id": 122,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "188:7:3",
@@ -421,12 +421,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 210,
+              "id": 125,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "214:0:3"
             },
-            "scope": 251,
+            "scope": 166,
             "src": "154:114:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -434,7 +434,7 @@
           },
           {
             "body": {
-              "id": 240,
+              "id": 155,
               "nodeType": "Block",
               "src": "360:71:3",
               "statements": [
@@ -448,25 +448,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 230,
+                            "id": 145,
                             "name": "users",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 204,
+                            "referencedDeclaration": 119,
                             "src": "378:5:3",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
                               "typeString": "struct Storage.User storage ref[] storage ref"
                             }
                           },
-                          "id": 232,
+                          "id": 147,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 231,
+                            "id": 146,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 223,
+                            "referencedDeclaration": 138,
                             "src": "384:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -480,18 +480,18 @@
                           "nodeType": "IndexAccess",
                           "src": "378:12:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_User_$201_storage",
+                            "typeIdentifier": "t_struct$_User_$116_storage",
                             "typeString": "struct Storage.User storage ref"
                           }
                         },
-                        "id": 233,
+                        "id": 148,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "username",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 198,
+                        "referencedDeclaration": 113,
                         "src": "378:21:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_storage",
@@ -504,25 +504,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 234,
+                            "id": 149,
                             "name": "users",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 204,
+                            "referencedDeclaration": 119,
                             "src": "401:5:3",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
                               "typeString": "struct Storage.User storage ref[] storage ref"
                             }
                           },
-                          "id": 236,
+                          "id": 151,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 235,
+                            "id": 150,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 223,
+                            "referencedDeclaration": 138,
                             "src": "407:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -536,18 +536,18 @@
                           "nodeType": "IndexAccess",
                           "src": "401:12:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_User_$201_storage",
+                            "typeIdentifier": "t_struct$_User_$116_storage",
                             "typeString": "struct Storage.User storage ref"
                           }
                         },
-                        "id": 237,
+                        "id": 152,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "myAddress",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 200,
+                        "referencedDeclaration": 115,
                         "src": "401:22:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -555,7 +555,7 @@
                         }
                       }
                     ],
-                    "id": 238,
+                    "id": 153,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -568,15 +568,15 @@
                       "typeString": "tuple(string storage ref,address)"
                     }
                   },
-                  "functionReturnParameters": 229,
-                  "id": 239,
+                  "functionReturnParameters": 144,
+                  "id": 154,
                   "nodeType": "Return",
                   "src": "370:54:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 241,
+            "id": 156,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -584,15 +584,15 @@
             "name": "getUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 224,
+              "id": 139,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 223,
+                  "id": 138,
                   "name": "index",
                   "nodeType": "VariableDeclaration",
-                  "scope": 241,
+                  "scope": 156,
                   "src": "291:10:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -601,7 +601,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 222,
+                    "id": 137,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "291:4:3",
@@ -618,15 +618,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 229,
+              "id": 144,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 226,
+                  "id": 141,
                   "name": "username",
                   "nodeType": "VariableDeclaration",
-                  "scope": 241,
+                  "scope": 156,
                   "src": "324:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -635,7 +635,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 225,
+                    "id": 140,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "324:6:3",
@@ -649,10 +649,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 228,
+                  "id": 143,
                   "name": "myAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 241,
+                  "scope": 156,
                   "src": "341:17:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -661,7 +661,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 227,
+                    "id": 142,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "341:7:3",
@@ -676,7 +676,7 @@
               ],
               "src": "323:36:3"
             },
-            "scope": 251,
+            "scope": 166,
             "src": "274:157:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -684,7 +684,7 @@
           },
           {
             "body": {
-              "id": 249,
+              "id": 164,
               "nodeType": "Block",
               "src": "488:36:3",
               "statements": [
@@ -693,18 +693,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 246,
+                      "id": 161,
                       "name": "users",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 204,
+                      "referencedDeclaration": 119,
                       "src": "505:5:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
                         "typeString": "struct Storage.User storage ref[] storage ref"
                       }
                     },
-                    "id": 247,
+                    "id": 162,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
@@ -718,15 +718,15 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 245,
-                  "id": 248,
+                  "functionReturnParameters": 160,
+                  "id": 163,
                   "nodeType": "Return",
                   "src": "498:19:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 250,
+            "id": 165,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -734,22 +734,22 @@
             "name": "getCountUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 242,
+              "id": 157,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "458:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 245,
+              "id": 160,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 244,
+                  "id": 159,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 250,
+                  "scope": 165,
                   "src": "482:4:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -758,7 +758,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 243,
+                    "id": 158,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "482:4:3",
@@ -773,14 +773,14 @@
               ],
               "src": "481:6:3"
             },
-            "scope": 251,
+            "scope": 166,
             "src": "437:87:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 252,
+        "scope": 167,
         "src": "27:499:3"
       }
     ],
@@ -790,14 +790,14 @@
     "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/Storage.sol",
     "exportedSymbols": {
       "Storage": [
-        251
+        166
       ]
     },
-    "id": 252,
+    "id": 167,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 196,
+        "id": 111,
         "literals": [
           "solidity",
           "^",
@@ -813,23 +813,23 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 251,
+        "id": 166,
         "linearizedBaseContracts": [
-          251
+          166
         ],
         "name": "Storage",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Storage.User",
-            "id": 201,
+            "id": 116,
             "members": [
               {
                 "constant": false,
-                "id": 198,
+                "id": 113,
                 "name": "username",
                 "nodeType": "VariableDeclaration",
-                "scope": 201,
+                "scope": 116,
                 "src": "73:15:3",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -838,7 +838,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 197,
+                  "id": 112,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "73:6:3",
@@ -852,10 +852,10 @@
               },
               {
                 "constant": false,
-                "id": 200,
+                "id": 115,
                 "name": "myAddress",
                 "nodeType": "VariableDeclaration",
-                "scope": 201,
+                "scope": 116,
                 "src": "98:17:3",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -864,7 +864,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 199,
+                  "id": 114,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "98:7:3",
@@ -879,42 +879,42 @@
             ],
             "name": "User",
             "nodeType": "StructDefinition",
-            "scope": 251,
+            "scope": 166,
             "src": "51:71:3",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 204,
+            "id": 119,
             "name": "users",
             "nodeType": "VariableDeclaration",
-            "scope": 251,
+            "scope": 166,
             "src": "128:19:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
               "typeString": "struct Storage.User[]"
             },
             "typeName": {
               "baseType": {
                 "contractScope": null,
-                "id": 202,
+                "id": 117,
                 "name": "User",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 201,
+                "referencedDeclaration": 116,
                 "src": "128:4:3",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_User_$201_storage_ptr",
+                  "typeIdentifier": "t_struct$_User_$116_storage_ptr",
                   "typeString": "struct Storage.User"
                 }
               },
-              "id": 203,
+              "id": 118,
               "length": null,
               "nodeType": "ArrayTypeName",
               "src": "128:6:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage_ptr",
                 "typeString": "struct Storage.User[]"
               }
             },
@@ -923,7 +923,7 @@
           },
           {
             "body": {
-              "id": 220,
+              "id": 135,
               "nodeType": "Block",
               "src": "214:54:3",
               "statements": [
@@ -936,11 +936,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 215,
+                            "id": 130,
                             "name": "username",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 206,
+                            "referencedDeclaration": 121,
                             "src": "240:8:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory_ptr",
@@ -949,11 +949,11 @@
                           },
                           {
                             "argumentTypes": null,
-                            "id": 216,
+                            "id": 131,
                             "name": "myAddress",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 208,
+                            "referencedDeclaration": 123,
                             "src": "250:9:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -972,18 +972,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 214,
+                          "id": 129,
                           "name": "User",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 201,
+                          "referencedDeclaration": 116,
                           "src": "235:4:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_struct$_User_$201_storage_ptr_$",
+                            "typeIdentifier": "t_type$_t_struct$_User_$116_storage_ptr_$",
                             "typeString": "type(struct Storage.User storage pointer)"
                           }
                         },
-                        "id": 217,
+                        "id": 132,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -993,7 +993,7 @@
                         "nodeType": "FunctionCall",
                         "src": "235:25:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_User_$201_memory",
+                          "typeIdentifier": "t_struct$_User_$116_memory",
                           "typeString": "struct Storage.User memory"
                         }
                       }
@@ -1001,24 +1001,24 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_User_$201_memory",
+                          "typeIdentifier": "t_struct$_User_$116_memory",
                           "typeString": "struct Storage.User memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 211,
+                        "id": 126,
                         "name": "users",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 204,
+                        "referencedDeclaration": 119,
                         "src": "224:5:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
                           "typeString": "struct Storage.User storage ref[] storage ref"
                         }
                       },
-                      "id": 213,
+                      "id": 128,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1028,11 +1028,11 @@
                       "referencedDeclaration": null,
                       "src": "224:10:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_User_$201_storage_$returns$_t_uint256_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_User_$116_storage_$returns$_t_uint256_$",
                         "typeString": "function (struct Storage.User storage ref) returns (uint256)"
                       }
                     },
-                    "id": 218,
+                    "id": 133,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1046,14 +1046,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 219,
+                  "id": 134,
                   "nodeType": "ExpressionStatement",
                   "src": "224:37:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 221,
+            "id": 136,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1061,15 +1061,15 @@
             "name": "setUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 209,
+              "id": 124,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 206,
+                  "id": 121,
                   "name": "username",
                   "nodeType": "VariableDeclaration",
-                  "scope": 221,
+                  "scope": 136,
                   "src": "171:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1078,7 +1078,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 205,
+                    "id": 120,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "171:6:3",
@@ -1092,10 +1092,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 208,
+                  "id": 123,
                   "name": "myAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 221,
+                  "scope": 136,
                   "src": "188:17:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1104,7 +1104,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 207,
+                    "id": 122,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "188:7:3",
@@ -1121,12 +1121,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 210,
+              "id": 125,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "214:0:3"
             },
-            "scope": 251,
+            "scope": 166,
             "src": "154:114:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1134,7 +1134,7 @@
           },
           {
             "body": {
-              "id": 240,
+              "id": 155,
               "nodeType": "Block",
               "src": "360:71:3",
               "statements": [
@@ -1148,25 +1148,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 230,
+                            "id": 145,
                             "name": "users",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 204,
+                            "referencedDeclaration": 119,
                             "src": "378:5:3",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
                               "typeString": "struct Storage.User storage ref[] storage ref"
                             }
                           },
-                          "id": 232,
+                          "id": 147,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 231,
+                            "id": 146,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 223,
+                            "referencedDeclaration": 138,
                             "src": "384:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1180,18 +1180,18 @@
                           "nodeType": "IndexAccess",
                           "src": "378:12:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_User_$201_storage",
+                            "typeIdentifier": "t_struct$_User_$116_storage",
                             "typeString": "struct Storage.User storage ref"
                           }
                         },
-                        "id": 233,
+                        "id": 148,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "username",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 198,
+                        "referencedDeclaration": 113,
                         "src": "378:21:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_storage",
@@ -1204,25 +1204,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 234,
+                            "id": 149,
                             "name": "users",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 204,
+                            "referencedDeclaration": 119,
                             "src": "401:5:3",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+                              "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
                               "typeString": "struct Storage.User storage ref[] storage ref"
                             }
                           },
-                          "id": 236,
+                          "id": 151,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 235,
+                            "id": 150,
                             "name": "index",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 223,
+                            "referencedDeclaration": 138,
                             "src": "407:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1236,18 +1236,18 @@
                           "nodeType": "IndexAccess",
                           "src": "401:12:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_User_$201_storage",
+                            "typeIdentifier": "t_struct$_User_$116_storage",
                             "typeString": "struct Storage.User storage ref"
                           }
                         },
-                        "id": 237,
+                        "id": 152,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "myAddress",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 200,
+                        "referencedDeclaration": 115,
                         "src": "401:22:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1255,7 +1255,7 @@
                         }
                       }
                     ],
-                    "id": 238,
+                    "id": 153,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -1268,15 +1268,15 @@
                       "typeString": "tuple(string storage ref,address)"
                     }
                   },
-                  "functionReturnParameters": 229,
-                  "id": 239,
+                  "functionReturnParameters": 144,
+                  "id": 154,
                   "nodeType": "Return",
                   "src": "370:54:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 241,
+            "id": 156,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1284,15 +1284,15 @@
             "name": "getUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 224,
+              "id": 139,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 223,
+                  "id": 138,
                   "name": "index",
                   "nodeType": "VariableDeclaration",
-                  "scope": 241,
+                  "scope": 156,
                   "src": "291:10:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1301,7 +1301,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 222,
+                    "id": 137,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "291:4:3",
@@ -1318,15 +1318,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 229,
+              "id": 144,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 226,
+                  "id": 141,
                   "name": "username",
                   "nodeType": "VariableDeclaration",
-                  "scope": 241,
+                  "scope": 156,
                   "src": "324:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1335,7 +1335,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 225,
+                    "id": 140,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "324:6:3",
@@ -1349,10 +1349,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 228,
+                  "id": 143,
                   "name": "myAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 241,
+                  "scope": 156,
                   "src": "341:17:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1361,7 +1361,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 227,
+                    "id": 142,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "341:7:3",
@@ -1376,7 +1376,7 @@
               ],
               "src": "323:36:3"
             },
-            "scope": 251,
+            "scope": 166,
             "src": "274:157:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -1384,7 +1384,7 @@
           },
           {
             "body": {
-              "id": 249,
+              "id": 164,
               "nodeType": "Block",
               "src": "488:36:3",
               "statements": [
@@ -1393,18 +1393,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 246,
+                      "id": 161,
                       "name": "users",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 204,
+                      "referencedDeclaration": 119,
                       "src": "505:5:3",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_User_$201_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_User_$116_storage_$dyn_storage",
                         "typeString": "struct Storage.User storage ref[] storage ref"
                       }
                     },
-                    "id": 247,
+                    "id": 162,
                     "isConstant": false,
                     "isLValue": true,
                     "isPure": false,
@@ -1418,15 +1418,15 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 245,
-                  "id": 248,
+                  "functionReturnParameters": 160,
+                  "id": 163,
                   "nodeType": "Return",
                   "src": "498:19:3"
                 }
               ]
             },
             "documentation": null,
-            "id": 250,
+            "id": 165,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1434,22 +1434,22 @@
             "name": "getCountUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 242,
+              "id": 157,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "458:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 245,
+              "id": 160,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 244,
+                  "id": 159,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 250,
+                  "scope": 165,
                   "src": "482:4:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1458,7 +1458,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 243,
+                    "id": 158,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "482:4:3",
@@ -1473,14 +1473,14 @@
               ],
               "src": "481:6:3"
             },
-            "scope": 251,
+            "scope": 166,
             "src": "437:87:3",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 252,
+        "scope": 167,
         "src": "27:499:3"
       }
     ],
@@ -1505,5 +1505,5 @@
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-09-30T15:17:20.093Z"
+  "updatedAt": "2018-10-01T05:05:25.424Z"
 }

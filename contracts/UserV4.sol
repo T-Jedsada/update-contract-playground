@@ -1,15 +1,13 @@
 pragma solidity ^0.4.24;
 
 import "./StorageState.sol";
+import "./ProductStorageState.sol";
+import "./Ownable.sol";
 
 
-contract UserV2 is StorageState {
+contract UserV4 is StorageState, Ownable, ProductStorageState {
 
-    struct Product {
-        
-    }
-
-    function register(string username) public {
+    function register(string username) public onlyOwner {
         _storage.setUser(username, msg.sender);
     }
 
@@ -19,5 +17,9 @@ contract UserV2 is StorageState {
 
     function getCountUser() public view returns (uint countUser) {
         return _storage.getCountUser();
+    }
+
+    function saveProduct() public {
+        _product.setProduct("name", 100);
     }
 }

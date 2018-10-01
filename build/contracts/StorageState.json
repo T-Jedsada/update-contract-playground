@@ -26,14 +26,14 @@
     "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/StorageState.sol",
     "exportedSymbols": {
       "StorageState": [
-        257
+        172
       ]
     },
-    "id": 258,
+    "id": 173,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 253,
+        "id": 168,
         "literals": [
           "solidity",
           "^",
@@ -46,10 +46,10 @@
       {
         "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/Storage.sol",
         "file": "./Storage.sol",
-        "id": 254,
+        "id": 169,
         "nodeType": "ImportDirective",
-        "scope": 258,
-        "sourceUnit": 252,
+        "scope": 173,
+        "sourceUnit": 167,
         "src": "26:23:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -60,35 +60,35 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 257,
+        "id": 172,
         "linearizedBaseContracts": [
-          257
+          172
         ],
         "name": "StorageState",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 256,
+            "id": 171,
             "name": "_storage",
             "nodeType": "VariableDeclaration",
-            "scope": 257,
+            "scope": 172,
             "src": "80:23:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Storage_$251",
+              "typeIdentifier": "t_contract$_Storage_$166",
               "typeString": "contract Storage"
             },
             "typeName": {
               "contractScope": null,
-              "id": 255,
+              "id": 170,
               "name": "Storage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 251,
+              "referencedDeclaration": 166,
               "src": "80:7:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Storage_$251",
+                "typeIdentifier": "t_contract$_Storage_$166",
                 "typeString": "contract Storage"
               }
             },
@@ -96,7 +96,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 258,
+        "scope": 173,
         "src": "52:54:4"
       }
     ],
@@ -106,14 +106,14 @@
     "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/StorageState.sol",
     "exportedSymbols": {
       "StorageState": [
-        257
+        172
       ]
     },
-    "id": 258,
+    "id": 173,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 253,
+        "id": 168,
         "literals": [
           "solidity",
           "^",
@@ -126,10 +126,10 @@
       {
         "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/Storage.sol",
         "file": "./Storage.sol",
-        "id": 254,
+        "id": 169,
         "nodeType": "ImportDirective",
-        "scope": 258,
-        "sourceUnit": 252,
+        "scope": 173,
+        "sourceUnit": 167,
         "src": "26:23:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -140,35 +140,35 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 257,
+        "id": 172,
         "linearizedBaseContracts": [
-          257
+          172
         ],
         "name": "StorageState",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 256,
+            "id": 171,
             "name": "_storage",
             "nodeType": "VariableDeclaration",
-            "scope": 257,
+            "scope": 172,
             "src": "80:23:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Storage_$251",
+              "typeIdentifier": "t_contract$_Storage_$166",
               "typeString": "contract Storage"
             },
             "typeName": {
               "contractScope": null,
-              "id": 255,
+              "id": 170,
               "name": "Storage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 251,
+              "referencedDeclaration": 166,
               "src": "80:7:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Storage_$251",
+                "typeIdentifier": "t_contract$_Storage_$166",
                 "typeString": "contract Storage"
               }
             },
@@ -176,7 +176,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 258,
+        "scope": 173,
         "src": "52:54:4"
       }
     ],
@@ -188,5 +188,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-09-30T15:17:20.094Z"
+  "updatedAt": "2018-10-01T05:05:25.425Z"
 }

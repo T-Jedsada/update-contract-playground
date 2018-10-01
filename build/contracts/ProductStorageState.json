@@ -1,0 +1,192 @@
+{
+  "contractName": "ProductStorageState",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "_product",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060c68061001f6000396000f300608060405260043610603e5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632fb958fa81146043575b600080fd5b348015604e57600080fd5b506055607e565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058201dc4684cc7895e3b35cd8a1a60272774a9906c09a4e6a4ba91d643d3e21b7e750029",
+  "deployedBytecode": "0x608060405260043610603e5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632fb958fa81146043575b600080fd5b348015604e57600080fd5b506055607e565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058201dc4684cc7895e3b35cd8a1a60272774a9906c09a4e6a4ba91d643d3e21b7e750029",
+  "sourceMap": "59:68:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:68:2;;;;;;;",
+  "deployedSourceMap": "59:68:2:-;;;;;;;;;;;;;;;;;;;;;;;94:30;;8:9:-1;5:2;;;30:1;27;20:12;5:2;94:30:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"./ProductStorage.sol\";\n\n\ncontract ProductStorageState {\n    ProductStorage public _product;\n}",
+  "sourcePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/ProductStorageState.sol",
+  "ast": {
+    "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/ProductStorageState.sol",
+    "exportedSymbols": {
+      "ProductStorageState": [
+        109
+      ]
+    },
+    "id": 110,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 105,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/ProductStorage.sol",
+        "file": "./ProductStorage.sol",
+        "id": 106,
+        "nodeType": "ImportDirective",
+        "scope": 110,
+        "sourceUnit": 104,
+        "src": "26:30:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 109,
+        "linearizedBaseContracts": [
+          109
+        ],
+        "name": "ProductStorageState",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 108,
+            "name": "_product",
+            "nodeType": "VariableDeclaration",
+            "scope": 109,
+            "src": "94:30:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ProductStorage_$103",
+              "typeString": "contract ProductStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 107,
+              "name": "ProductStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 103,
+              "src": "94:14:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ProductStorage_$103",
+                "typeString": "contract ProductStorage"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 110,
+        "src": "59:68:2"
+      }
+    ],
+    "src": "0:127:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/ProductStorageState.sol",
+    "exportedSymbols": {
+      "ProductStorageState": [
+        109
+      ]
+    },
+    "id": 110,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 105,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/Users/jedsada/Documents/development/update-contraact-playground/contracts/ProductStorage.sol",
+        "file": "./ProductStorage.sol",
+        "id": 106,
+        "nodeType": "ImportDirective",
+        "scope": 110,
+        "sourceUnit": 104,
+        "src": "26:30:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 109,
+        "linearizedBaseContracts": [
+          109
+        ],
+        "name": "ProductStorageState",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 108,
+            "name": "_product",
+            "nodeType": "VariableDeclaration",
+            "scope": 109,
+            "src": "94:30:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_ProductStorage_$103",
+              "typeString": "contract ProductStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 107,
+              "name": "ProductStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 103,
+              "src": "94:14:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ProductStorage_$103",
+                "typeString": "contract ProductStorage"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 110,
+        "src": "59:68:2"
+      }
+    ],
+    "src": "0:127:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-10-01T05:05:25.424Z"
+}
